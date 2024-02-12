@@ -1,0 +1,25 @@
+{
+    "workbench.colorCustomizations": {
+        "[Windows 11 Dark]": {
+            "sideBar.foreground": "#c7c7c7",
+            "sideBar.background": "#0b1014",
+            "sideBarSectionHeader.background": "#0b1014",
+            "editor.background": "#000000",
+            "breadcrumb.background": "#0b1014",
+            "statusBar.background": "#0b1014",
+            "statusBar.foreground": "#626262",
+            "minimap.background": "#0b1014",
+            "titleBar.activeBackground": "#0b1014",
+            "editorGroupHeader.tabsBackground": "#0b1014",
+            "activityBar.background": "#0b1014",
+            "tab.inactiveBackground": "#0b1014",
+            "tab.activeBackground": "#0b1014",
+            "tab.activeBorder": "#ffd866",
+            "editor.lineHighlightBackground": "#1073cf2d",
+            "editor.lineHighlightBorder": "#9fced11f"
+        },
+        "activityBar.background": "#0E2D58",
+        "titleBar.activeBackground": "#143F7C",
+        "titleBar.activeForeground": "#F7FAFE"
+    }
+}
