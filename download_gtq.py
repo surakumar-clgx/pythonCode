@@ -78,9 +78,9 @@ if __name__ == "__main__":
         blob.download_to_filename("" + fileName)
         return "downloaded"
 
-    folder = ""
+    folder = "dec"
     # os.mkdir(r"\\10.212.30.30\Share Folder\yokesh\spacy\TX_TEST_OCR")
-    ocr_path = r"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\KY_data\oct\adc"  # destination path for ocr
+    ocr_path = rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\KY_data\{folder}\adcNew"  # destination path for ocr
     print(f"\n\nOcr folder path: {ocr_path} \n\n")
     # ocr_path=r"C:\Users\mabdullah\OneDrive - CoreLogic Solutions, LLC\Downloads\TN\Data_Extraction_June" #destination path for ocr
     from pathlib import Path
@@ -90,11 +90,11 @@ if __name__ == "__main__":
     import pandas as pd
 
     batch_df = pd.read_csv(
-        r"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\batchid.csv"
+        rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\Billing\KY_{folder.upper()}_adc.csv"
     )  # path here#
     # batch_df=pd.read_csv(r"C:\Users\mabdullah\OneDrive - CoreLogic Solutions, LLC\Downloads\TN\TN_set1.1_4590new.csv") #path here#
 
-    batch = batch_df["docid_oct"].dropna().to_list()  # [:20000]
+    batch = batch_df["docid"].dropna().to_list()  # [:20000]
     print(len(batch))
     from tqdm import tqdm
 
