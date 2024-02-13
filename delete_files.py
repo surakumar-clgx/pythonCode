@@ -8,7 +8,7 @@ logging.basicConfig(
     format=" %(asctime)s - %(levelname)s- %(message)s",
 )
 logging.info(
-    "=================================> Start of program <=========================================="
+    "===============================> Start of program <========================================="
 )
 
 # logging.disable(logging.DEBUG)
@@ -22,17 +22,17 @@ def delete_empty_files(folder):
             file.unlink()
 
 
-def delete_files(batchid_list):
+def delete_files(source_dir, batchid_list):
     logging.debug(f"type of batchid values passed: {type(batchid_list[0])}")
     deleted_files_count = 0
     for b in batchid_list:
         b = int(b)
         ocr_name = f"{b}_OCR.txt"
-        ocr_path = Path.joinpath(mort_dir, ocr_name)
+        ocr_path = Path.joinpath(source_dir, ocr_name)
         out1 = ocr_path.is_file()
 
         keyed_name = f"{b}_output.json"
-        keyed_path = Path.joinpath(mort_dir, keyed_name)
+        keyed_path = Path.joinpath(source_dir, keyed_name)
         out2 = keyed_path.is_file()
 
         # zip_name = f"{b}.zip"
@@ -58,8 +58,8 @@ if __name__ == "__main__":
     batch_df = pd.read_csv(
         rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\Billing\KY_{month.upper()}_adc.csv"
     )
-    batchid_list = batch_df[f"docid"].dropna().to_list()
+    batchid_list = batch_df["docid"].dropna().to_list()
 
     delete_empty_files(mort_dir)
-    deleled_files_count = delete_files(batchid_list)
+    deleled_files_count = delete_files(mort_dir, batchid_list)
     print(deleled_files_count)
