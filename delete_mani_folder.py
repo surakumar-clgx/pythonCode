@@ -65,7 +65,7 @@ if __name__ == "__main__":
     stats = pstats.Stats(pr)
     stats.sort_stats(pstats.SortKey.TIME)
     stats.print_stats()
-    stats.dump_stats(filename=f"{__file__.replace('py','prof')}")
+    stats.dump_stats(filename=f"{__file__.replace('.py','.prof')}")
 
 # =================================================
 # mani = [
