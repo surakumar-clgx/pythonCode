@@ -3,7 +3,7 @@ import pandas as pd
 import logging
 
 logging.basicConfig(
-    filename=r"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\delete_files.log",
+    filename=r"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\pythonCode\delete_files.log",
     level=logging.DEBUG,
     format=" %(asctime)s - %(levelname)s- %(message)s",
 )
@@ -51,14 +51,14 @@ def delete_files(batchid_list):
 
 if __name__ == "__main__":
     # mort_dir = Path(r"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\GTQ_images_ocrs\Prod\mortgage\FL\\")
-    month = "oct"
+    month = "dec"
     mort_dir = Path(
-        rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\KY_data\{month}\adc"
+        rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\KY_data\{month}\adcNew"
     )
     batch_df = pd.read_csv(
-        r"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\batchid.csv"
+        rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\Billing\KY_{month.upper()}_adc.csv"
     )
-    batchid_list = batch_df[f"docid_{month}"].dropna().to_list()
+    batchid_list = batch_df[f"docid"].dropna().to_list()
 
     delete_empty_files(mort_dir)
     deleled_files_count = delete_files(batchid_list)
