@@ -1,9 +1,6 @@
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
-from tqdm import tqdm
 import asyncio
-from functools import partial
-from sys import exit
 from pyinputplus import inputYesNo
 import cProfile
 import pstats
@@ -56,7 +53,7 @@ if __name__ == "__main__":
         print(f"==> {folder}")
 
     choice = inputYesNo(prompt="\n\nEnter Y to proceed else enter N -: ", default="N")
-    if not choice.lower() == "yes":
+    if choice.lower() != "yes":
         exit("Exiting program as user don't want to delete listed folders.")
 
     with cProfile.Profile() as pr:

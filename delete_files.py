@@ -22,10 +22,10 @@ def delete_empty_files(folder):
             file.unlink()
 
 
-def delete_files(source_dir, batchid_list):
-    logging.debug(f"type of batchid values passed: {type(batchid_list[0])}")
+def delete_files(source_dir, batchids):
+    logging.debug(f"type of batchid values passed: {type(batchids[0])}")
     deleted_files_count = 0
-    for b in batchid_list:
+    for b in batchids:
         b = int(b)
         ocr_name = f"{b}_OCR.txt"
         ocr_path = Path.joinpath(source_dir, ocr_name)

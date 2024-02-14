@@ -2,7 +2,7 @@
 # p = "\\filer-argentina-dev\Argentina\Shared Folder\Suraj\PA\Data_Extraction_aug"
 # path=rf"\\filer-argentina-dev\Argentina\Shared Folder\Suraj\PA\Data_Extraction_{month}"
 # path = rf"\\filer-argentina-dev\Argentina\Shared Folder\Prateekesh\KY\Data_Extraction_{month}"
-month = "sept"
+month = "dec"
 path = rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\KY_data\{month}\b1"
 import os
 from tqdm import tqdm
@@ -69,10 +69,11 @@ for j in tqdm(lis2):
     training_annotations = {}
     #     for i in train_data:
     #         training_annotations[i['id']]=i['value']
-    [training_annotations.__setitem__(i["id"], i["value"]) for i in tqdm(train_data)]
+    [training_annotations.__setitem__(i["id"], i["value"]) for i in train_data]
     training_dict["annotations"] = training_annotations
     final["data"].append(training_annotations)
 
 file_name = rf"\{month}_KY_train_output.json"
 json.dump(final, open(ocr_path + file_name, "w"))
 print("Completed Merger")
+print(path)
