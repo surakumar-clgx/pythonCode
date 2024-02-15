@@ -1,9 +1,13 @@
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
+
 import asyncio
 from pyinputplus import inputYesNo
+
 import cProfile
 import pstats
+
+# from tqdm import tqdm
 
 
 def delete(file):
@@ -70,7 +74,7 @@ if __name__ == "__main__":
 #     for folder in list(
 #         Path(r"\\filer-argentina-dev\Argentina\Shared Folder\Mani\\").iterdir()
 #     )
-#     if "_" in folder.name
+#     if "_" in folder.name and folder.is_dir()
 # ]
 
 # print(f"\n\n\nTotal number of folders to be deleted -: {len(mani)}")
@@ -78,7 +82,7 @@ if __name__ == "__main__":
 #     print(folder)
 
 # choice = inputYesNo(prompt="\n\nEnter Y to proceed else enter N -: ", default="N")
-# if not choice.lower() == "yes":
+# if choice.lower() != "yes":
 #     exit("Exiting program as user don't want to delete listed folders.")
 
 
@@ -87,7 +91,7 @@ if __name__ == "__main__":
 
 
 # for folder in tqdm(mani):
-#     if not "_" in str(folder.name):
+#     if "_" not in str(folder.name):
 #         continue
 #     print(folder)
 #     with ThreadPoolExecutor(max_workers=200) as executor:
