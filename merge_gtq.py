@@ -2,8 +2,10 @@
 # p = "\\filer-argentina-dev\Argentina\Shared Folder\Suraj\PA\Data_Extraction_aug"
 # path=rf"\\filer-argentina-dev\Argentina\Shared Folder\Suraj\PA\Data_Extraction_{month}"
 # path = rf"\\filer-argentina-dev\Argentina\Shared Folder\Prateekesh\KY\Data_Extraction_{month}"
-month = "dec"
-path = rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\KY_data\{month}\b1"
+# month = "dec"
+# path = rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\KY_data\{month}\b1"
+state = "md"
+path = rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\GTQ_images_ocrs\critiacal_fields\nonFannie"
 import os
 from tqdm import tqdm
 
@@ -41,7 +43,7 @@ tests = [
     )
     for i in tqdm(lis)
 ]
-file_name = rf"\{month}_KY_train_ocr.json"
+file_name = rf"\critical_ocr.json"
 # # json.dump(test_dict,open(rf"\\filer-argentina-dev\Argentina\Shared Folder\Suraj\PA\Data_Extraction_{month}_Output\\"+file_name,"w"))
 json.dump(test_dict, open(ocr_path + file_name, "w"))
 
@@ -53,7 +55,7 @@ lis2 = []
 lis2 = [i.replace("_OCR.txt", "_output.json") for i in lis]
 # ids=['5', '92', '93', '504', '6']
 # ids=['5', '92', '93', '6']
-ids = ["58", "61"]
+ids = ["33", "35", "37", "38"]
 # ids=['10','11']
 final = {"data": []}
 
@@ -73,7 +75,7 @@ for j in tqdm(lis2):
     training_dict["annotations"] = training_annotations
     final["data"].append(training_annotations)
 
-file_name = rf"\{month}_KY_train_output.json"
+file_name = rf"\critical_output.json"
 json.dump(final, open(ocr_path + file_name, "w"))
 print("Completed Merger")
 print(path)

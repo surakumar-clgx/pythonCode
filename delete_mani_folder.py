@@ -29,6 +29,7 @@ async def multi_thread_delete(task_num, folder):
         #     loop.run_in_executor(pool, delete, files) for files in folder.iterdir()
         # )
         await asyncio.gather(*tasks)
+
     folder.rmdir()
     print(f"ended : {task_num}")
     print("-------------------")
@@ -43,7 +44,6 @@ async def main(folders):
 
 
 if __name__ == "__main__":
-
     mani = [
         folder
         for folder in Path(
@@ -51,6 +51,14 @@ if __name__ == "__main__":
         ).iterdir()
         if "_" in folder.name and folder.is_dir()
     ]
+
+    # mani = [
+    #     folder
+    #     for folder in Path(
+    #         r"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\GTQ_images_ocrs"
+    #     ).iterdir()
+    #     if folder.is_dir() and "critiacal_fields (" in folder.name
+    # ]
 
     print(f"\n\n\nTotal number of folders to be deleted -: {len(mani)}\n\n")
     for folder in mani:

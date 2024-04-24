@@ -53,12 +53,12 @@ if __name__ == "__main__":
     # mort_dir = Path(r"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\GTQ_images_ocrs\Prod\mortgage\FL\\")
     month = "dec"
     mort_dir = Path(
-        rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\KY_data\{month}\adcNew"
+        rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\nj_data"
     )
     batch_df = pd.read_csv(
-        rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\Billing\KY_{month.upper()}_adc.csv"
+        rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\batchid.csv"
     )
-    batchid_list = batch_df["docid"].dropna().to_list()
+    batchid_list = batch_df["nj_docid"].dropna().to_list()[:50000]
 
     delete_empty_files(mort_dir)
     deleled_files_count = delete_files(mort_dir, batchid_list)

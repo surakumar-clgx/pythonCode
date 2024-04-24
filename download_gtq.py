@@ -1,5 +1,6 @@
 # path="//10.212.30.30/Share Folder/yokesh/New folder (2)/argentina-prd.json"
 from multiprocessing import Process, Queue, current_process, Pipe
+
 import queue
 
 key_path = r"\\filer-argentina-dev\Argentina\Shared Folder\yokesh\Bucket\prd.json"
@@ -35,10 +36,10 @@ def download_ocr(tasks_to_do, tasks_completed, ocr_path):
                     blob = bucket.blob(file.name)
                     if "OCR" in file.name:
                         blob.download_to_filename(ocr_path + "/" + i + "_OCR.txt")
-                        # print("ocr",i)
+                        print("ocr", i)
                     elif "output_data" in file.name:
                         blob.download_to_filename(ocr_path + "/" + i + "_output.json")
-                        # print("output_data",i)
+                    print("output_data", i)
                     del blob
                 tasks_completed.put(i)
             except Exception as e:
@@ -80,7 +81,7 @@ if __name__ == "__main__":
 
     folder = "dec"
     # os.mkdir(r"\\10.212.30.30\Share Folder\yokesh\spacy\TX_TEST_OCR")
-    ocr_path = rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\KY_data\{folder}\adcNew"  # destination path for ocr
+    ocr_path = rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\GTQ_images_ocrs\critiacal_fields\nonFannie"  # destination path for ocr
     print(f"\n\nOcr folder path: {ocr_path} \n\n")
     # ocr_path=r"C:\Users\mabdullah\OneDrive - CoreLogic Solutions, LLC\Downloads\TN\Data_Extraction_June" #destination path for ocr
     from pathlib import Path
@@ -90,11 +91,11 @@ if __name__ == "__main__":
     import pandas as pd
 
     batch_df = pd.read_csv(
-        rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\Billing\KY_{folder.upper()}_adc.csv"
+        rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\batchid.csv"
     )  # path here#
     # batch_df=pd.read_csv(r"C:\Users\mabdullah\OneDrive - CoreLogic Solutions, LLC\Downloads\TN\TN_set1.1_4590new.csv") #path here#
 
-    batch = batch_df["docid"].dropna().to_list()  # [:20000]
+    batch = set(batch_df["nf"].dropna().to_list())
     print(len(batch))
     from tqdm import tqdm
 
@@ -111,8 +112,11 @@ if __name__ == "__main__":
         p.start()
         print(p.pid, "started")
         process.append(p)
+
     for p in process:
         p.join(300)
+
+    for p in process:
         if p.is_alive():
             p.terminate()
             print("terminated")

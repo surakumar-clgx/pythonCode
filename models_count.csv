@@ -1,0 +1,433 @@
+classify_model/cariver,classify_model/flpalmbeach,classify_model/flsaintlucie,classify_model/codenver4all,classify_model/fl7all,classify_model/castate,classify_model/mistate,classify_model/njstate,classify_model/ohstate,classify_model/pastate,classify_model/instate,classify_model/mdstate,classify_model/txstate,classify_model/ncstate,classify_model/orstate,classify_model/set1,classify_model/set2,classify_model/set3,classify_model/set4,classify_model/set5
+ca riverside,fl palm beach,fl saint lucie,co denver,fl marion,ca alpine,mi allegan,nj atlantic,oh adams,pa adams,in adams,md allegany,tx anderson,nc alamance,or baker,id ada,il adams,sc abbeville,ky adair,ut beaver
+,,,co arapahoe,fl duval,ca amador,mi cass,nj bergen,oh allen,pa allegheny,in allen,md anne arundel,tx andrews,nc alexander,or benton,id adams,il alexander,sc aiken,ky allen,ut box elder
+,,,co jefferson,fl brevard,ca butte,mi clinton,nj burlington,oh ashland,pa armstrong,in bartholomew,md baltimore,tx angelina,nc alleghany,or clackamas,id bannock,il bond,sc allendale,ky anderson,ut cache
+,,,co el paso,fl lake,ca glenn,mi eaton,nj camden,oh ashtabula,pa beaver,in benton,md baltimore city,tx aransas,nc anson,or clatsop,id bear lake,il boone,sc anderson,ky ballard,ut carbon
+,,,co adams,fl escambia,ca imperial,mi genesee,nj cape may,oh athens,pa bedford,in blackford,md calvert,tx archer,nc ashe,or columbia,id benewah,il brown,sc bamberg,ky barren,ut daggett
+,,,co bent,fl baker,ca lassen,mi iosco,nj cumberland,oh auglaize,pa berks,in boone,md caroline,tx armstrong,nc avery,or coos,id bingham,il bureau,sc barnwell,ky bath,ut davis
+,,,co chaffee,fl bay,ca plumas,mi ingham,nj essex,oh belmont,pa blair,in brown,md carroll,tx atascosa,nc beaufort,or crook,id blaine,il calhoun,sc beaufort,ky bell,ut duchesne
+,,,co clear creek,fl bradford,,mi kalamazoo,nj gloucester,oh brown,pa bradford,in carroll,md cecil,tx austin,nc bertie,or curry,id boise,il carroll,sc berkeley,ky boone,ut emery
+,,,co conejos,fl clay,,mi mecosta,nj hudson,oh butler,pa bucks,in cass,md charles,tx bailey,nc bladen,or deschutes,id bonner,il cass,sc calhoun,ky bourbon,ut garfield
+,,,co costilla,fl columbia,,mi midland,nj hunterdon,oh carroll,pa butler,in clark,md dorchester,tx bandera,nc brunswick,or douglas,id bonneville,il champaign,sc charleston,ky boyd,ut grand
+,,,co delta,fl dixie,,mi monroe,nj mercer,oh champaign,pa cambria,in clay,md frederick,tx bastrop,nc buncombe,or gilliam,id boundary,il christian,sc cherokee,ky boyle,ut iron
+,,,co dolores,fl franklin,,mi oceana,nj middlesex,oh clark,pa cameron,in clinton,md garrett,tx baylor,nc burke,or grant,id butte,il clark,sc chester,ky bracken,ut juab
+,,,co eagle,fl gilchrist,,mi ottawa,nj monmouth,oh clermont,pa carbon,in crawford,md harford,tx bee,nc cabarrus,or harney,id camas,il clay,sc chesterfield,ky breathitt,ut kane
+,,,co elbert,fl glades,,mi saint clair,nj morris,oh clinton,pa centre,in daviess,md howard,tx bell,nc caldwell,or hood river,id canyon,il clinton,sc clarendon,ky breckinridge,ut millard
+,,,co fremont,fl hamilton,,mi sanilac,nj ocean,oh columbiana,pa chester,in de kalb,md kent,tx bexar,nc camden,or jackson,id caribou,il coles,sc colleton,ky bullitt,ut morgan
+,,,co garfield,fl hendry,,mi van buren,nj passaic,oh coshocton,pa clarion,in dearborn,md montgomery,tx blanco,nc carteret,or jefferson,id cassia,il cook,sc darlington,ky butler,ut piute
+,,,co gilpin,fl hernando,,mi oakland,nj salem,oh crawford,pa clearfield,in decatur,md prince george's,tx borden,nc caswell,or josephine,id clark,il crawford,sc dillon,ky caldwell,ut rich
+,,,co gunnison,fl highlands,,,nj somerset,oh cuyahoga,pa clinton,in delaware,md queen annes,tx bosque,nc catawba,or klamath,id clearwater,il cumberland,sc dorchester,ky calloway,ut salt lake
+,,,co las animas,fl holmes,,,nj sussex,oh darke,pa columbia,in dubois,md somerset,tx bowie,nc chatham,or lake,id custer,il de witt,sc edgefield,ky campbell,ut san juan
+,,,co la plata,fl indian river,,,nj union,oh defiance,pa crawford,in elkhart,md saint marys,tx brazoria,nc cherokee,or lane,id elmore,il dekalb,sc fairfield,ky carlisle,ut sanpete
+,,,co lincoln,fl jefferson,,,nj warren,oh delaware,pa cumberland,in fayette,md talbot,tx brazos,nc chowan,or lincoln,id franklin,il douglas,sc florence,ky carroll,ut sevier
+,,,co logan,fl lafayette,,,,oh erie,pa dauphin,in floyd,md washington,tx brewster,nc clay,or linn,id fremont,il dupage,sc georgetown,ky carter,ut summit
+,,,co mesa,fl levy,,,,oh fairfield,pa delaware,in fountain,md wicomico,tx briscoe,nc cleveland,or malheur,id gem,il edgar,sc greenville,ky casey,ut tooele
+,,,co montrose,fl madison,,,,oh fayette,pa elk,in franklin,md worcester,tx brooks,nc columbus,or marion,id gooding,il edwards,sc greenwood,ky christian,ut uintah
+,,,co ouray,fl suwannee,,,,oh franklin,pa erie,in fulton,,tx brown,nc craven,or morrow,id idaho,il effingham,sc hampton,ky clark,ut utah
+,,,co pitkin,fl union,,,,oh fulton,pa fayette,in gibson,,tx burleson,nc cumberland,or multnomah,id jefferson,il fayette,sc horry,ky clay,ut wasatch
+,,,co prowers,fl wakulla,,,,oh gallia,pa forest,in grant,,tx burnet,nc currituck,or polk,id jerome,il ford,sc jasper,ky clinton,ut washington
+,,,co pueblo,fl washington,,,,oh geauga,pa franklin,in greene,,tx caldwell,nc dare,or sherman,id kootenai,il franklin,sc kershaw,ky crittenden,ut wayne
+,,,co rio blanco,fl manatee,,,,oh greene,pa fulton,in hamilton,,tx calhoun,nc davidson,or tillamook,id latah,il fulton,sc lancaster,ky cumberland,ut weber
+,,,co rio grande,,,,,oh guernsey,pa greene,in hancock,,tx callahan,nc davie,or umatilla,id lemhi,il gallatin,sc laurens,ky daviess,ok adair
+,,,,,,,,oh hamilton,pa huntingdon,in harrison,,tx cameron,nc duplin,or union,id lewis,il greene,sc lee,ky edmonson,ok alfalfa
+,,,,,,,,oh hancock,pa indiana,in hendricks,,tx camp,nc durham,or wallowa,id lincoln,il grundy,sc lexington,ky elliott,ok atoka
+,,,,,,,,oh hardin,pa jefferson,in henry,,tx carson,nc edgecombe,or wasco,id madison,il hamilton,sc marion,ky estill,ok beaver
+,,,,,,,,oh harrison,pa juniata,in howard,,tx cass,nc forsyth,or washington,id minidoka,il hancock,sc marlboro,ky fayette,ok beckham
+,,,,,,,,oh henry,pa lackawanna,in huntington,,tx castro,nc franklin,or wheeler,id nez perce,il hardin,sc mccormick,ky fleming,ok blaine
+,,,,,,,,oh highland,pa lancaster,in jackson,,tx chambers,nc gaston,or yamhill,id oneida,il henderson,sc newberry,ky floyd,ok bryan
+,,,,,,,,oh hocking,pa lawrence,in jasper,,tx cherokee,nc gates,,id owyhee,il henry,sc oconee,ky franklin,ok caddo
+,,,,,,,,oh holmes,pa lebanon,in jay,,tx childress,nc graham,,id payette,il iroquois,sc orangeburg,ky fulton,ok canadian
+,,,,,,,,oh huron,pa lehigh,in jefferson,,tx clay,nc granville,,id power,il jackson,sc pickens,ky gallatin,ok carter
+,,,,,,,,oh jackson,pa luzerne,in jennings,,tx cochran,nc greene,,id shoshone,il jasper,sc richland,ky garrard,ok cherokee
+,,,,,,,,oh jefferson,pa lycoming,in johnson,,tx coke,nc guilford,,id teton,il jefferson,sc saluda,ky grant,ok choctaw
+,,,,,,,,oh knox,pa mc kean,in knox,,tx coleman,nc halifax,,id twin falls,il jersey,sc spartanburg,ky graves,ok cimarron
+,,,,,,,,oh lake,pa merce,in kosciusko,,tx collin,nc harnett,,id valley,il jo daviess,sc sumter,ky grayson,ok cleveland
+,,,,,,,,oh lawrence,pa mifflin,in la porte,,tx collingsworth,nc haywood,,id washington,il johnson,sc union,ky green,ok coal
+,,,,,,,,oh licking,pa monroe,in lagrange,,tx colorado,nc henderson,,mo adair,il kane,sc williamsburg,ky greenup,ok comanche
+,,,,,,,,oh logan,pa montgomery,in lake,,tx comal,nc hertford,,mo andrew,il kankakee,sc york,ky hancock,ok cotton
+,,,,,,,,oh lorain,pa montour,in lawrence,,tx comanche,nc hoke,,mo atchison,il kendall,tn anderson,ky hardin,ok craig
+,,,,,,,,oh lucas,pa northampton,in madison,,tx concho,nc hyde,,mo audrain,il knox,tn bedford,ky harlan,ok creek
+,,,,,,,,oh madison,pa northumberland,in marion,,tx cooke,nc iredell,,mo barry,il la salle,tn benton,ky harrison,ok custer
+,,,,,,,,oh mahoning,pa perry,in marshall,,tx coryell,nc jackson,,mo barton,il lake,tn bledsoe,ky hart,ok delaware
+,,,,,,,,oh marion,pa philadelphia,in martin,,tx cottle,nc johnston,,mo bates,il lawrence,tn blount,ky henderson,ok dewey
+,,,,,,,,oh medina,pa pike,in miami,,tx crane,nc jones,,mo benton,il lee,tn bradley,ky henry,ok ellis
+,,,,,,,,oh meigs,pa potter,in monroe,,tx crockett,nc lee,,mo bollinger,il livingston,tn campbell,ky hickman,ok garfield
+,,,,,,,,oh mercer,pa schuylkill,in montgomery,,tx crosby,nc lenoir,,mo boone,il logan,tn cannon,ky hopkins,ok garvin
+,,,,,,,,oh miami,pa snyder,in morgan,,tx culberson,nc lincoln,,mo buchanan,il macon,tn carroll,ky jackson,ok grady
+,,,,,,,,oh monroe,pa somerset,in newton,,tx dallam,nc macon,,mo butler,il macoupin,tn carter,ky jefferson,ok grant
+,,,,,,,,oh montgomery,pa sullivan,in noble,,tx dallas,nc madison,,mo caldwell,il madison,tn cheatham,ky jessamine,ok greer
+,,,,,,,,oh morgan,pa susquehanna,in ohio,,tx dawson,nc martin,,mo callaway,il marion,tn chester,ky johnson,ok harmon
+,,,,,,,,oh morrow,pa tioga,in orange,,tx deaf smith,nc mcdowell,,mo camden,il marshall,tn claiborne,ky kenton,ok harper
+,,,,,,,,oh muskingum,pa union,in owen,,tx delta,nc mecklenburg,,mo cape girardeau,il mason,tn clay,ky knott,ok haskell
+,,,,,,,,oh noble,pa venango,in parke,,tx denton,nc mitchell,,mo carroll,il massac,tn cocke,ky knox,ok hughes
+,,,,,,,,oh ottawa,pa warren,in perry,,tx dewitt,nc montgomery,,mo carter,il mcdonough,tn coffee,ky larue,ok jackson
+,,,,,,,,oh paulding,pa washington,in pike,,tx dickens,nc moore,,mo cass,il mchenry,tn crockett,ky laurel,ok jefferson
+,,,,,,,,oh perry,pa wayne,in porter,,tx dimmit,nc nash,,mo cedar,il mclean,tn cumberland,ky lawrence,ok johnston
+,,,,,,,,oh pickaway,pa westmoreland,in posey,,tx donley,nc new hanover,,mo chariton,il menard,tn davidson,ky lee,ok kay
+,,,,,,,,oh pike,pa wyoming,in pulaski,,tx duval,nc northampton,,mo christian,il mercer,tn de kalb,ky leslie,ok kingfisher
+,,,,,,,,oh portage,pa york,in putnam,,tx eastland,nc onslow,,mo clark,il monroe,tn decatur,ky letcher,ok kiowa
+,,,,,,,,oh preble,,in randolph,,tx ector,nc orange,,mo clay,il montgomery,tn dickson,ky lewis,ok latimer
+,,,,,,,,oh putnam,,in ripley,,tx edwards,nc pamlico,,mo clinton,il morgan,tn dyer,ky lincoln,ok le flore
+,,,,,,,,oh richland,,in rush,,tx el paso,nc pasquotank,,mo cole,il moultrie,tn fayette,ky livingston,ok lincoln
+,,,,,,,,oh ross,,in scott,,tx ellis,nc pender,,mo cooper,il ogle,tn fentress,ky logan,ok logan
+,,,,,,,,oh sandusky,,in shelby,,tx erath,nc perquimans,,mo crawford,il peoria,tn franklin,ky lyon,ok love
+,,,,,,,,oh scioto,,in spencer,,tx falls,nc person,,mo dade,il perry,tn gibson,ky madison,ok major
+,,,,,,,,oh seneca,,in saint joseph,,tx fannin,nc pitt,,mo dallas,il piatt,tn giles,ky magoffin,ok marshall
+,,,,,,,,oh shelby,,in starke,,tx fayette,nc polk,,mo daviess,il pike,tn grainger,ky marion,ok mayes
+,,,,,,,,oh stark,,in steuben,,tx fisher,nc randolph,,mo dekalb,il pope,tn greene,ky marshall,ok mcclain
+,,,,,,,,oh summit,,in sullivan,,tx floyd,nc richmond,,mo dent,il pulaski,tn grundy,ky martin,ok mccurtain
+,,,,,,,,oh trumbull,,in switzerland,,tx foard,nc robeson,,mo douglas,il putnam,tn hamblen,ky mason,ok mcintosh
+,,,,,,,,oh tuscarawas,,in tippecanoe,,tx fort bend,nc rockingham,,mo dunklin,il randolph,tn hamilton,ky mccracken,ok murray
+,,,,,,,,oh union,,in tipton,,tx franklin,nc rowan,,mo franklin,il richland,tn hancock,ky mccreary,ok muskogee
+,,,,,,,,oh van wert,,in union,,tx freestone,nc rutherford,,mo gasconade,il rock island,tn hardeman,ky mclean,ok noble
+,,,,,,,,oh vinton,,in vanderburgh,,tx frio,nc sampson,,mo gentry,il saline,tn hardin,ky meade,ok nowata
+,,,,,,,,oh warren,,in vermillion,,tx gaines,nc scotland,,mo greene,il sangamon,tn hawkins,ky menifee,ok okfuskee
+,,,,,,,,oh washington,,in vigo,,tx galveston,nc stanly,,mo grundy,il schuyler,tn haywood,ky mercer,ok oklahoma
+,,,,,,,,oh wayne,,in wabash,,tx garza,nc stokes,,mo harrison,il scott,tn henderson,ky metcalfe,ok okmulgee
+,,,,,,,,oh williams,,in warren,,tx gillespie,nc surry,,mo henry,il shelby,tn henry,ky monroe,ok osage
+,,,,,,,,oh wood,,in warrick,,tx glasscock,nc swain,,mo hickory,il saint clair,tn hickman,ky montgomery,ok ottawa
+,,,,,,,,oh wyandot,,in washington,,tx goliad,nc transylvania,,mo holt,il stark,tn houston,ky morgan,ok pawnee
+,,,,,,,,,,in wayne,,tx gonzales,nc tyrrell,,mo howard,il stephenson,tn humphreys,ky muhlenberg,ok payne
+,,,,,,,,,,in wells,,tx gray,nc union,,mo howell,il tazewell,tn jackson,ky nelson,ok pittsburg
+,,,,,,,,,,in white,,tx grayson,nc vance,,mo iron,il union,tn jefferson,ky nicholas,ok pontotoc
+,,,,,,,,,,in whitley,,tx gregg,nc wake,,mo jackson,il vermilion,tn johnson,ky ohio,ok pottawatomie
+,,,,,,,,,,,,tx grimes,nc warren,,mo jasper,il wabash,tn knox,ky oldham,ok pushmataha
+,,,,,,,,,,,,tx guadalupe,nc washington,,mo jefferson,il warren,tn lake,ky owen,ok roger mills
+,,,,,,,,,,,,tx hale,nc watauga,,mo johnson,il washington,tn lauderdale,ky owsley,ok rogers
+,,,,,,,,,,,,tx hall,nc wayne,,mo knox,il wayne,tn lawrence,ky pendleton,ok seminole
+,,,,,,,,,,,,tx hamilton,nc wilkes,,mo laclede,il white,tn lewis,ky perry,ok sequoyah
+,,,,,,,,,,,,tx hansford,nc wilson,,mo lafayette,il whiteside,tn lincoln,ky pike,ok stephens
+,,,,,,,,,,,,tx hardeman,nc yadkin,,mo lawrence,il will,tn loudon,ky powell,ok texas
+,,,,,,,,,,,,tx hardin,nc yancey,,mo lewis,il williamson,tn macon,ky pulaski,ok tillman
+,,,,,,,,,,,,tx harris,,,mo lincoln,il winnebago,tn madison,ky robertson,ok tulsa
+,,,,,,,,,,,,tx harrison,,,mo linn,il woodford,tn marion,ky rockcastle,ok wagoner
+,,,,,,,,,,,,tx hartley,,,mo livingston,ny albany,tn marshall,ky rowan,ok washington
+,,,,,,,,,,,,tx haskell,,,mo macon,ny allegany,tn maury,ky russell,ok washita
+,,,,,,,,,,,,tx hays,,,mo madison,ny bronx,tn mc minn,ky scott,ok woods
+,,,,,,,,,,,,tx hemphill,,,mo maries,ny broome,tn mc nairy,ky shelby,ok woodward
+,,,,,,,,,,,,tx henderson,,,mo marion,ny cattaraugus,tn meigs,ky simpson,wa adams
+,,,,,,,,,,,,tx hidalgo,,,mo mcdonald,ny cayuga,tn monroe,ky spencer,wa asotin
+,,,,,,,,,,,,tx hill,,,mo mercer,ny chautauqua,tn montgomery,ky taylor,wa benton
+,,,,,,,,,,,,tx hockley,,,mo miller,ny chemung,tn moore,ky todd,wa chelan
+,,,,,,,,,,,,tx hood,,,mo mississippi,ny chenango,tn morgan,ky trigg,wa clallam
+,,,,,,,,,,,,tx hopkins,,,mo moniteau,ny clinton,tn obion,ky trimble,wa clark
+,,,,,,,,,,,,tx houston,,,mo monroe,ny columbia,tn overton,ky union,wa columbia
+,,,,,,,,,,,,tx howard,,,mo montgomery,ny cortland,tn perry,ky warren,wa cowlitz
+,,,,,,,,,,,,tx hudspeth,,,mo morgan,ny delaware,tn pickett,ky washington,wa douglas
+,,,,,,,,,,,,tx hunt,,,mo new madrid,ny dutchess,tn polk,ky wayne,wa ferry
+,,,,,,,,,,,,tx hutchinson,,,mo newton,ny erie,tn putnam,ky webster,wa franklin
+,,,,,,,,,,,,tx irion,,,mo nodaway,ny essex,tn rhea,ky whitley,wa garfield
+,,,,,,,,,,,,tx jack,,,mo oregon,ny franklin,tn roane,ky wolfe,wa grant
+,,,,,,,,,,,,tx jackson,,,mo osage,ny fulton,tn robertson,ky woodford,wa grays harbor
+,,,,,,,,,,,,tx jasper,,,mo ozark,ny genesee,tn rutherford,de kent,wa island
+,,,,,,,,,,,,tx jeff davis,,,mo pemiscot,ny greene,tn scott,de new castle,wa jefferson
+,,,,,,,,,,,,tx jefferson,,,mo perry,ny hamilton,tn sequatchie,de sussex,wa king
+,,,,,,,,,,,,tx jim hogg,,,mo pettis,ny herkimer,tn sevier,ks allen,wa kitsap
+,,,,,,,,,,,,tx jim wells,,,mo phelps,ny jefferson,tn shelby,ks anderson,wa kittitas
+,,,,,,,,,,,,tx johnson,,,mo pike,ny kings,tn smith,ks atchison,wa klickitat
+,,,,,,,,,,,,tx jones,,,mo platte,ny lewis,tn stewart,ks barber,wa lewis
+,,,,,,,,,,,,tx karnes,,,mo polk,ny livingston,tn sullivan,ks barton,wa lincoln
+,,,,,,,,,,,,tx kaufman,,,mo pulaski,ny madison,tn sumner,ks bourbon,wa mason
+,,,,,,,,,,,,tx kendall,,,mo putnam,ny manhattan,tn tipton,ks brown,wa okanogan
+,,,,,,,,,,,,tx kenedy,,,mo ralls,ny monroe,tn trousdale,ks butler,wa pacific
+,,,,,,,,,,,,tx kent,,,mo randolph,ny montgomery,tn unicoi,ks chase,wa pend oreille
+,,,,,,,,,,,,tx kerr,,,mo ray,ny nassau,tn union,ks chautauqua,wa pierce
+,,,,,,,,,,,,tx kimble,,,mo reynolds,ny niagara,tn van buren,ks cherokee,wa san juan
+,,,,,,,,,,,,tx king,,,mo ripley,ny oneida,tn warren,ks cheyenne,wa skagit
+,,,,,,,,,,,,tx kinney,,,mo saline,ny onondaga,tn washington,ks clark,wa skamania
+,,,,,,,,,,,,tx kleberg,,,mo schuyler,ny ontario,tn wayne,ks clay,wa snohomish
+,,,,,,,,,,,,tx knox,,,mo scotland,ny orange,tn weakley,ks cloud,wa spokane
+,,,,,,,,,,,,tx la salle,,,mo scott,ny orleans,tn white,ks coffey,wa stevens
+,,,,,,,,,,,,tx lamar,,,mo shannon,ny oswego,tn williamson,ks comanche,wa thurston
+,,,,,,,,,,,,tx lamb,,,mo shelby,ny otsego,tn wilson,ks cowley,wa wahkiakum
+,,,,,,,,,,,,tx lampasas,,,mo saint charles,ny putnam,al autauga,ks crawford,wa walla walla
+,,,,,,,,,,,,tx lavaca,,,mo saint clair,ny queens,al baldwin,ks decatur,wa whatcom
+,,,,,,,,,,,,tx lee,,,mo saint francois,ny rensselaer,al barbour,ks dickinson,wa whitman
+,,,,,,,,,,,,tx leon,,,mo saint louis county,ny rockland,al bibb,ks doniphan,wa yakima
+,,,,,,,,,,,,tx liberty,,,mo st. louis,ny saratoga,al blount,ks douglas,wi adams
+,,,,,,,,,,,,tx limestone,,,mo ste genevieve,ny schenectady,al bullock,ks edwards,wi ashland
+,,,,,,,,,,,,tx lipscomb,,,mo stoddard,ny schoharie,al butler,ks elk,wi barron
+,,,,,,,,,,,,tx live oak,,,mo stone,ny schuyler,al calhoun,ks ellis,wi bayfield
+,,,,,,,,,,,,tx llano,,,mo sullivan,ny seneca,al chambers,ks ellsworth,wi brown
+,,,,,,,,,,,,tx loving,,,mo taney,ny saint lawrence,al cherokee,ks finney,wi buffalo
+,,,,,,,,,,,,tx lubbock,,,mo texas,ny staten island (richmond),al chilton,ks ford,wi burnett
+,,,,,,,,,,,,tx lynn,,,mo vernon,ny steuben,al choctaw,ks franklin,wi calumet
+,,,,,,,,,,,,tx madison,,,mo warren,ny suffolk,al clarke,ks geary,wi chippewa
+,,,,,,,,,,,,tx marion,,,mo washington,ny sullivan,al clay,ks gove,wi clark
+,,,,,,,,,,,,tx martin,,,mo wayne,ny tioga,al cleburne,ks graham,wi columbia
+,,,,,,,,,,,,tx mason,,,mo webster,ny tompkins,al coffee,ks grant,wi crawford
+,,,,,,,,,,,,tx matagorda,,,mo worth,ny ulster,al colbert,ks gray,wi dane
+,,,,,,,,,,,,tx maverick,,,mo wright,ny warren,al conecuh,ks greeley,wi dodge
+,,,,,,,,,,,,tx mc lennan,,,nv carson city,ny washington,al coosa,ks greenwood,wi door
+,,,,,,,,,,,,tx mcculloch,,,nv churchill,ny wayne,al covington,ks hamilton,wi douglas
+,,,,,,,,,,,,tx mcmullen,,,nv clark,ny westchester,al crenshaw,ks harper,wi dunn
+,,,,,,,,,,,,tx medina,,,nv douglas,ny wyoming,al cullman,ks harvey,wi eau claire
+,,,,,,,,,,,,tx menard,,,nv elko,ny yates,al dale,ks haskell,wi florence
+,,,,,,,,,,,,tx midland,,,nv esmeralda,,al dallas,ks hodgeman,wi fond du lac
+,,,,,,,,,,,,tx milam,,,nv eureka,,al de kalb,ks jackson,wi forest
+,,,,,,,,,,,,tx mills,,,nv humboldt,,al elmore,ks jefferson,wi grant
+,,,,,,,,,,,,tx mitchell,,,nv lander,,al escambia,ks jewell,wi green
+,,,,,,,,,,,,tx montague,,,nv lincoln,,al etowah,ks johnson,wi green lake
+,,,,,,,,,,,,tx montgomery,,,nv lyon,,al fayette,ks kearny,wi iowa
+,,,,,,,,,,,,tx moore,,,nv mineral,,al franklin,ks kingman,wi iron
+,,,,,,,,,,,,tx morris,,,nv nye,,al geneva,ks kiowa,wi jackson
+,,,,,,,,,,,,tx motley,,,nv pershing,,al greene,ks labette,wi jefferson
+,,,,,,,,,,,,tx nacogdoches,,,nv storey,,al hale,ks lane,wi juneau
+,,,,,,,,,,,,tx navarro,,,nv washoe,,al henry,ks leavenworth,wi kenosha
+,,,,,,,,,,,,tx newton,,,nv white pine,,al houston,ks lincoln,wi kewaunee
+,,,,,,,,,,,,tx nolan,,,mn aitkin,,al jackson,ks linn,wi la crosse
+,,,,,,,,,,,,tx nueces,,,mn anoka,,al jefferson,ks logan,wi lafayette
+,,,,,,,,,,,,tx ochiltree,,,mn becker,,al lamar,ks lyon,wi langlade
+,,,,,,,,,,,,tx oldham,,,mn beltrami,,al lauderdale,ks marion,wi lincoln
+,,,,,,,,,,,,tx orange,,,mn benton,,al lawrence,ks marshall,wi manitowoc
+,,,,,,,,,,,,tx palo pinto,,,mn big stone,,al lee,ks mcpherson,wi marathon
+,,,,,,,,,,,,tx panola,,,mn blue earth,,al limestone,ks meade,wi marinette
+,,,,,,,,,,,,tx parker,,,mn brown,,al lowndes,ks miami,wi marquette
+,,,,,,,,,,,,tx parmer,,,mn carlton,,al macon,ks mitchell,wi menominee
+,,,,,,,,,,,,tx pecos,,,mn carver,,al madison,ks montgomery,wi milwaukee
+,,,,,,,,,,,,tx polk,,,mn cass,,al marengo,ks morris,wi monroe
+,,,,,,,,,,,,tx potter,,,mn chippewa,,al marion,ks morton,wi oconto
+,,,,,,,,,,,,tx presidio,,,mn chisago,,al marshall,ks nemaha,wi oneida
+,,,,,,,,,,,,tx rains,,,mn clay,,al mobile,ks neosho,wi outagamie
+,,,,,,,,,,,,tx randall,,,mn clearwater,,al monroe,ks ness,wi ozaukee
+,,,,,,,,,,,,tx reagan,,,mn cook,,al montgomery,ks norton,wi pepin
+,,,,,,,,,,,,tx real,,,mn cottonwood,,al morgan,ks osage,wi pierce
+,,,,,,,,,,,,tx red river,,,mn crow wing,,al perry,ks osborne,wi polk
+,,,,,,,,,,,,tx reeves,,,mn dakota,,al pickens,ks ottawa,wi portage
+,,,,,,,,,,,,tx refugio,,,mn dodge,,al pike,ks pawnee,wi price
+,,,,,,,,,,,,tx roberts,,,mn douglas,,al randolph,ks phillips,wi racine
+,,,,,,,,,,,,tx robertson,,,mn faribault,,al russell,ks pottawatomie,wi richland
+,,,,,,,,,,,,tx rockwall,,,mn fillmore,,al shelby,ks pratt,wi rock
+,,,,,,,,,,,,tx runnels,,,mn freeborn,,al saint clair,ks rawlins,wi rusk
+,,,,,,,,,,,,tx rusk,,,mn goodhue,,al sumter,ks reno,wi sauk
+,,,,,,,,,,,,tx sabine,,,mn grant,,al talladega,ks republic,wi sawyer
+,,,,,,,,,,,,tx san augustine,,,mn hennepin,,al tallapoosa,ks rice,wi shawano
+,,,,,,,,,,,,tx san jacinto,,,mn houston,,al tuscaloosa,ks riley,wi sheboygan
+,,,,,,,,,,,,tx san patricio,,,mn hubbard,,al walker,ks rooks,wi saint croix
+,,,,,,,,,,,,tx san saba,,,mn isanti,,al washington,ks rush,wi taylor
+,,,,,,,,,,,,tx schleicher,,,mn itasca,,al wilcox,ks russell,wi trempealeau
+,,,,,,,,,,,,tx scurry,,,mn jackson,,al winston,ks saline,wi vernon
+,,,,,,,,,,,,tx shackelford,,,mn kanabec,,ar arkansas,ks scott,wi vilas
+,,,,,,,,,,,,tx shelby,,,mn kandiyohi,,ar ashley,ks sedgwick,wi walworth
+,,,,,,,,,,,,tx sherman,,,mn kittson,,ar baxter,ks seward,wi washburn
+,,,,,,,,,,,,tx smith,,,mn koochiching,,ar benton,ks shawnee,wi washington
+,,,,,,,,,,,,tx somervell,,,mn lac qui parle,,ar boone,ks sheridan,wi waukesha
+,,,,,,,,,,,,tx starr,,,mn lake,,ar bradley,ks sherman,wi waupaca
+,,,,,,,,,,,,tx stephens,,,mn lake of the woods,,ar calhoun,ks smith,wi waushara
+,,,,,,,,,,,,tx sterling,,,mn le sueur,,ar carroll,ks stafford,wi winnebago
+,,,,,,,,,,,,tx stonewall,,,mn lincoln,,ar chicot,ks stanton,wi wood
+,,,,,,,,,,,,tx sutton,,,mn lyon,,ar clark,ks stevens,wv barbour
+,,,,,,,,,,,,tx swisher,,,mn mahnomen,,ar clay,ks sumner,wv berkeley
+,,,,,,,,,,,,tx tarrant,,,mn marshall,,ar cleburne,ks thomas,wv boone
+,,,,,,,,,,,,tx taylor,,,mn martin,,ar cleveland,ks trego,wv braxton
+,,,,,,,,,,,,tx terrell,,,mn mcleod,,ar columbia,ks wabaunseev,wv brooke
+,,,,,,,,,,,,tx terry,,,mn meeker,,ar conway,ks wallace,wv cabell
+,,,,,,,,,,,,tx throckmorton,,,mn mille lacs,,ar craighead,ks washington,wv calhoun
+,,,,,,,,,,,,tx titus,,,mn morrison,,ar crawford,ks wichita,wv clay
+,,,,,,,,,,,,tx tom green,,,mn mower,,ar crittenden,ks wilson,wv doddridge
+,,,,,,,,,,,,tx travis,,,mn murray,,ar cross,ks woodson,wv fayette
+,,,,,,,,,,,,tx trinity,,,mn nicollet,,ar dallas,ks wyandotte,wv gilmer
+,,,,,,,,,,,,tx tyler,,,mn nobles,,ar desha,me androscoggin,wv grant
+,,,,,,,,,,,,tx upshur,,,mn norman,,ar drew,me aroostook,wv greenbrier
+,,,,,,,,,,,,tx upton,,,mn olmsted,,ar faulkner,me cumberland,wv hampshire
+,,,,,,,,,,,,tx uvalde,,,mn otter tail,,ar franklin,me franklin,wv hancock
+,,,,,,,,,,,,tx val verde,,,mn pennington,,ar fulton,me hancock,wv hardy
+,,,,,,,,,,,,tx van zandt,,,mn pine,,ar garland,me kennebec,wv harrison
+,,,,,,,,,,,,tx victoria,,,mn pipestone,,ar grant,me knox,wv jackson
+,,,,,,,,,,,,tx walker,,,mn polk,,ar greene,me lincoln,wv jefferson
+,,,,,,,,,,,,tx waller,,,mn pope,,ar hempstead,me oxford,wv kanawha
+,,,,,,,,,,,,tx ward,,,mn ramsey,,ar hot spring,me penobscot,wv lewis
+,,,,,,,,,,,,tx washington,,,mn red lake,,ar howard,me piscataquis,wv lincoln
+,,,,,,,,,,,,tx webb,,,mn redwood,,ar independence,me sagadahoc,wv logan
+,,,,,,,,,,,,tx wharton,,,mn renville,,ar izard,me somerset,wv marion
+,,,,,,,,,,,,tx wheeler,,,mn rice,,ar jackson,me waldo,wv marshall
+,,,,,,,,,,,,tx wichita,,,mn rock,,ar jefferson,me washington,wv mason
+,,,,,,,,,,,,tx wilbarger,,,mn roseau,,ar johnson,me york,wv mc dowell
+,,,,,,,,,,,,tx willacy,,,mn scott,,ar lafayette,nm bernalillo,wv mercer
+,,,,,,,,,,,,tx williamson,,,mn sherburne,,ar lawrence,nm catron,wv mineral
+,,,,,,,,,,,,tx wilson,,,mn sibley,,ar lee,nm chaves,wv mingo
+,,,,,,,,,,,,tx winkler,,,mn saint louis,,ar lincoln,nm cibola,wv monongalia
+,,,,,,,,,,,,tx wise,,,mn stearns,,ar little river,nm colfax,wv monroe
+,,,,,,,,,,,,tx wood,,,mn steele,,ar logan,nm curry,wv morgan
+,,,,,,,,,,,,tx yoakum,,,mn stevens,,ar lonoke,nm debaca,wv nicholas
+,,,,,,,,,,,,tx young,,,mn swift,,ar madison,nm dona ana,wv ohio
+,,,,,,,,,,,,tx zapata,,,mn todd,,ar marion,nm eddy,wv pendleton
+,,,,,,,,,,,,tx zavala,,,mn traverse,,ar miller,nm grant,wv pleasants
+,,,,,,,,,,,,,,,mn wabasha,,ar mississippi,nm guadalupe,wv pocahontas
+,,,,,,,,,,,,,,,mn wadena,,ar monroe,nm harding,wv preston
+,,,,,,,,,,,,,,,mn waseca,,ar montgomery,nm hidalgo,wv putnam
+,,,,,,,,,,,,,,,mn washington,,ar nevada,nm lea,wv raleigh
+,,,,,,,,,,,,,,,mn watonwan,,ar newton,nm lincoln,wv randolph
+,,,,,,,,,,,,,,,mn wilkin,,ar ouachita,nm los alamos,wv ritchie
+,,,,,,,,,,,,,,,mn winona,,ar perry,nm luna,wv roane
+,,,,,,,,,,,,,,,mn wright,,ar phillips,nm mckinley,wv summers
+,,,,,,,,,,,,,,,mn yellow medicine,,ar pike,nm mora,wv taylor
+,,,,,,,,,,,,,,,,,ar poinsett,nm otero,wv tucker
+,,,,,,,,,,,,,,,,,ar polk,nm quay,wv tyler
+,,,,,,,,,,,,,,,,,ar pope,nm rio arriba,wv upshur
+,,,,,,,,,,,,,,,,,ar prairie,nm roosevelt,wv wayne
+,,,,,,,,,,,,,,,,,ar pulaski,nm san juan,wv webster
+,,,,,,,,,,,,,,,,,ar randolph,nm san miguel,wv wetzel
+,,,,,,,,,,,,,,,,,ar saline,nm sandoval,wv wirt
+,,,,,,,,,,,,,,,,,ar scott,nm santa fe,wv wood
+,,,,,,,,,,,,,,,,,ar searcy,nm sierra,wv wyoming
+,,,,,,,,,,,,,,,,,ar sebastian,nm socorro,wy albany
+,,,,,,,,,,,,,,,,,ar sevier,nm taos,wy big horn
+,,,,,,,,,,,,,,,,,ar sharp,nm torrance,wy campbell
+,,,,,,,,,,,,,,,,,ar saint francis,nm union,wy carbon
+,,,,,,,,,,,,,,,,,ar stone,nm valencia,wy converse
+,,,,,,,,,,,,,,,,,ar union,,wy crook
+,,,,,,,,,,,,,,,,,ar van buren,,wy fremont
+,,,,,,,,,,,,,,,,,ar washington,,wy goshen
+,,,,,,,,,,,,,,,,,ar white,,wy hot springs
+,,,,,,,,,,,,,,,,,ar woodruff,,wy johnson
+,,,,,,,,,,,,,,,,,ar yell,,wy laramie
+,,,,,,,,,,,,,,,,,mt beaverhead,,wy lincoln
+,,,,,,,,,,,,,,,,,mt big horn,,wy natrona
+,,,,,,,,,,,,,,,,,mt blaine,,wy niobrara
+,,,,,,,,,,,,,,,,,mt broadwater,,wy park
+,,,,,,,,,,,,,,,,,mt carbon,,wy platte
+,,,,,,,,,,,,,,,,,mt carter,,wy sheridan
+,,,,,,,,,,,,,,,,,mt cascade,,wy sublette
+,,,,,,,,,,,,,,,,,mt chouteau,,wy sweetwater
+,,,,,,,,,,,,,,,,,mt custer,,wy teton
+,,,,,,,,,,,,,,,,,mt daniels,,wy uinta
+,,,,,,,,,,,,,,,,,mt dawson,,wy washakie
+,,,,,,,,,,,,,,,,,mt deer lodge,,wy weston
+,,,,,,,,,,,,,,,,,mt fallon,,
+,,,,,,,,,,,,,,,,,mt fergus,,
+,,,,,,,,,,,,,,,,,mt flathead,,
+,,,,,,,,,,,,,,,,,mt gallatin,,
+,,,,,,,,,,,,,,,,,mt garfield,,
+,,,,,,,,,,,,,,,,,mt glacier,,
+,,,,,,,,,,,,,,,,,mt golden valley,,
+,,,,,,,,,,,,,,,,,mt granite,,
+,,,,,,,,,,,,,,,,,mt hill,,
+,,,,,,,,,,,,,,,,,mt jefferson,,
+,,,,,,,,,,,,,,,,,mt judith basin,,
+,,,,,,,,,,,,,,,,,mt lake,,
+,,,,,,,,,,,,,,,,,mt lewis and clark,,
+,,,,,,,,,,,,,,,,,mt liberty,,
+,,,,,,,,,,,,,,,,,mt lincoln,,
+,,,,,,,,,,,,,,,,,mt madison,,
+,,,,,,,,,,,,,,,,,mt mc cone,,
+,,,,,,,,,,,,,,,,,mt meagher,,
+,,,,,,,,,,,,,,,,,mt mineral,,
+,,,,,,,,,,,,,,,,,mt missoula,,
+,,,,,,,,,,,,,,,,,mt musselshell,,
+,,,,,,,,,,,,,,,,,mt park,,
+,,,,,,,,,,,,,,,,,mt petroleum,,
+,,,,,,,,,,,,,,,,,mt phillips,,
+,,,,,,,,,,,,,,,,,mt pondera,,
+,,,,,,,,,,,,,,,,,mt powder river,,
+,,,,,,,,,,,,,,,,,mt powell,,
+,,,,,,,,,,,,,,,,,mt prairie,,
+,,,,,,,,,,,,,,,,,mt ravalli,,
+,,,,,,,,,,,,,,,,,mt richland,,
+,,,,,,,,,,,,,,,,,mt roosevelt,,
+,,,,,,,,,,,,,,,,,mt rosebud,,
+,,,,,,,,,,,,,,,,,mt sanders,,
+,,,,,,,,,,,,,,,,,mt sheridan,,
+,,,,,,,,,,,,,,,,,mt silver bow,,
+,,,,,,,,,,,,,,,,,mt stillwater,,
+,,,,,,,,,,,,,,,,,mt sweet grass,,
+,,,,,,,,,,,,,,,,,mt teton,,
+,,,,,,,,,,,,,,,,,mt toole,,
+,,,,,,,,,,,,,,,,,mt treasure,,
+,,,,,,,,,,,,,,,,,mt valley,,
+,,,,,,,,,,,,,,,,,mt wheatland,,
+,,,,,,,,,,,,,,,,,mt wibaux,,
+,,,,,,,,,,,,,,,,,mt yellowstone,,
+,,,,,,,,,,,,,,,,,ne adams,,
+,,,,,,,,,,,,,,,,,ne antelope,,
+,,,,,,,,,,,,,,,,,ne arthur,,
+,,,,,,,,,,,,,,,,,ne banner,,
+,,,,,,,,,,,,,,,,,ne blaine,,
+,,,,,,,,,,,,,,,,,ne boone,,
+,,,,,,,,,,,,,,,,,ne box butte,,
+,,,,,,,,,,,,,,,,,ne boyd,,
+,,,,,,,,,,,,,,,,,ne brown,,
+,,,,,,,,,,,,,,,,,ne buffalo,,
+,,,,,,,,,,,,,,,,,ne burt,,
+,,,,,,,,,,,,,,,,,ne butler,,
+,,,,,,,,,,,,,,,,,ne cass,,
+,,,,,,,,,,,,,,,,,ne cedar,,
+,,,,,,,,,,,,,,,,,ne chase,,
+,,,,,,,,,,,,,,,,,ne cherry,,
+,,,,,,,,,,,,,,,,,ne cheyenne,,
+,,,,,,,,,,,,,,,,,ne clay,,
+,,,,,,,,,,,,,,,,,ne colfax,,
+,,,,,,,,,,,,,,,,,ne cuming,,
+,,,,,,,,,,,,,,,,,ne custer,,
+,,,,,,,,,,,,,,,,,ne dakota,,
+,,,,,,,,,,,,,,,,,ne dawes,,
+,,,,,,,,,,,,,,,,,ne dawson,,
+,,,,,,,,,,,,,,,,,ne deuel,,
+,,,,,,,,,,,,,,,,,ne dixon,,
+,,,,,,,,,,,,,,,,,ne dodge,,
+,,,,,,,,,,,,,,,,,ne douglas,,
+,,,,,,,,,,,,,,,,,ne dundy,,
+,,,,,,,,,,,,,,,,,ne fillmore,,
+,,,,,,,,,,,,,,,,,ne franklin,,
+,,,,,,,,,,,,,,,,,ne frontier,,
+,,,,,,,,,,,,,,,,,ne furnas,,
+,,,,,,,,,,,,,,,,,ne gage,,
+,,,,,,,,,,,,,,,,,ne garden,,
+,,,,,,,,,,,,,,,,,ne garfield,,
+,,,,,,,,,,,,,,,,,ne gosper,,
+,,,,,,,,,,,,,,,,,ne grant,,
+,,,,,,,,,,,,,,,,,ne greeley,,
+,,,,,,,,,,,,,,,,,ne hall,,
+,,,,,,,,,,,,,,,,,ne hamilton,,
+,,,,,,,,,,,,,,,,,ne harlan,,
+,,,,,,,,,,,,,,,,,ne hayes,,
+,,,,,,,,,,,,,,,,,ne hitchcock,,
+,,,,,,,,,,,,,,,,,ne holt,,
+,,,,,,,,,,,,,,,,,ne hooker,,
+,,,,,,,,,,,,,,,,,ne howard,,
+,,,,,,,,,,,,,,,,,ne jefferson,,
+,,,,,,,,,,,,,,,,,ne johnson,,
+,,,,,,,,,,,,,,,,,ne kearney,,
+,,,,,,,,,,,,,,,,,ne keith,,
+,,,,,,,,,,,,,,,,,ne keya paha,,
+,,,,,,,,,,,,,,,,,ne kimball,,
+,,,,,,,,,,,,,,,,,ne knox,,
+,,,,,,,,,,,,,,,,,ne lancaster,,
+,,,,,,,,,,,,,,,,,ne lincoln,,
+,,,,,,,,,,,,,,,,,ne logan,,
+,,,,,,,,,,,,,,,,,ne loup,,
+,,,,,,,,,,,,,,,,,ne madison,,
+,,,,,,,,,,,,,,,,,ne mcpherson,,
+,,,,,,,,,,,,,,,,,ne merrick,,
+,,,,,,,,,,,,,,,,,ne morrill,,
+,,,,,,,,,,,,,,,,,ne nance,,
+,,,,,,,,,,,,,,,,,ne nemaha,,
+,,,,,,,,,,,,,,,,,ne nuckolls,,
+,,,,,,,,,,,,,,,,,ne otoe,,
+,,,,,,,,,,,,,,,,,ne pawnee,,
+,,,,,,,,,,,,,,,,,ne perkins,,
+,,,,,,,,,,,,,,,,,ne phelps,,
+,,,,,,,,,,,,,,,,,ne pierce,,
+,,,,,,,,,,,,,,,,,ne platte,,
+,,,,,,,,,,,,,,,,,ne polk,,
+,,,,,,,,,,,,,,,,,ne red willow,,
+,,,,,,,,,,,,,,,,,ne richardson,,
+,,,,,,,,,,,,,,,,,ne rock,,
+,,,,,,,,,,,,,,,,,ne saline,,
+,,,,,,,,,,,,,,,,,ne sarpy,,
+,,,,,,,,,,,,,,,,,ne saunders,,
+,,,,,,,,,,,,,,,,,ne scotts bluff,,
+,,,,,,,,,,,,,,,,,ne seward,,
+,,,,,,,,,,,,,,,,,ne sheridan,,
+,,,,,,,,,,,,,,,,,ne sherman,,
+,,,,,,,,,,,,,,,,,ne sioux,,
+,,,,,,,,,,,,,,,,,ne stanton,,
+,,,,,,,,,,,,,,,,,ne thayer,,
+,,,,,,,,,,,,,,,,,ne thomas,,
+,,,,,,,,,,,,,,,,,ne thurston,,
+,,,,,,,,,,,,,,,,,ne valley,,
+,,,,,,,,,,,,,,,,,ne washington,,
+,,,,,,,,,,,,,,,,,ne wayne,,
+,,,,,,,,,,,,,,,,,ne webster,,
+,,,,,,,,,,,,,,,,,ne wheeler,,
+,,,,,,,,,,,,,,,,,ne york,,
