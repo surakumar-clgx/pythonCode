@@ -51,15 +51,11 @@ if __name__ == "__main__":
         ).iterdir()
         if "_" in folder.name and folder.is_dir()
     ]
-
     # mani = [
-    #     folder
-    #     for folder in Path(
-    #         r"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\GTQ_images_ocrs"
-    #     ).iterdir()
-    #     if folder.is_dir() and "critiacal_fields (" in folder.name
+    #     Path(
+    #         r"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\KY_data"
+    #     )
     # ]
-
     print(f"\n\n\nTotal number of folders to be deleted -: {len(mani)}\n\n")
     for folder in mani:
         print(f"==> {folder}")

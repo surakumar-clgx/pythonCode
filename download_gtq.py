@@ -1,15 +1,14 @@
 # path="//10.212.30.30/Share Folder/yokesh/New folder (2)/argentina-prd.json"
-from multiprocessing import Process, Queue, current_process, Pipe
-
+from multiprocessing import Process, Queue, current_process
 import queue
+from google.cloud import storage
+import os
+import json
 
 key_path = r"\\filer-argentina-dev\Argentina\Shared Folder\yokesh\Bucket\prd.json"
-import os, json
-
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = key_path
 bucketName = "clgx-clvtowerb-app-cv-gcs01-prd"
 bucketName = "clgx-clvtowerb-app-cv-gcs01-prd"
-from google.cloud import storage
 
 storage_client = storage.Client()
 bucket = storage_client.get_bucket(bucketName)
@@ -37,9 +36,9 @@ def download_ocr(tasks_to_do, tasks_completed, ocr_path):
                     if "OCR" in file.name:
                         blob.download_to_filename(ocr_path + "/" + i + "_OCR.txt")
                         print("ocr", i)
-                    elif "output_data" in file.name:
-                        blob.download_to_filename(ocr_path + "/" + i + "_output.json")
-                    print("output_data", i)
+                    # elif "output_data" in file.name:
+                    #     blob.download_to_filename(ocr_path + "/" + i + "_output.json")
+                    # print("output_data", i)
                     del blob
                 tasks_completed.put(i)
             except Exception as e:
@@ -48,7 +47,6 @@ def download_ocr(tasks_to_do, tasks_completed, ocr_path):
 
 if __name__ == "__main__":
     key_path = r"\\filer-argentina-dev\Argentina\Shared Folder\yokesh\Bucket\prd.json"
-    import os, json
 
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = key_path
     bucketName = "clgx-clvtowerb-app-cv-gcs01-prd"
@@ -81,7 +79,7 @@ if __name__ == "__main__":
 
     folder = "dec"
     # os.mkdir(r"\\10.212.30.30\Share Folder\yokesh\spacy\TX_TEST_OCR")
-    ocr_path = rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\GTQ_images_ocrs\critiacal_fields\nonFannie"  # destination path for ocr
+    ocr_path = rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\nj_data"  # destination path for ocr
     print(f"\n\nOcr folder path: {ocr_path} \n\n")
     # ocr_path=r"C:\Users\mabdullah\OneDrive - CoreLogic Solutions, LLC\Downloads\TN\Data_Extraction_June" #destination path for ocr
     from pathlib import Path
@@ -95,7 +93,7 @@ if __name__ == "__main__":
     )  # path here#
     # batch_df=pd.read_csv(r"C:\Users\mabdullah\OneDrive - CoreLogic Solutions, LLC\Downloads\TN\TN_set1.1_4590new.csv") #path here#
 
-    batch = set(batch_df["nf"].dropna().to_list())
+    batch = set(batch_df["nj_docid"].dropna().to_list())
     print(len(batch))
     from tqdm import tqdm
 
