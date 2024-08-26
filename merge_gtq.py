@@ -4,8 +4,8 @@
 # path = rf"\\filer-argentina-dev\Argentina\Shared Folder\Prateekesh\KY\Data_Extraction_{month}"
 # month = "dec"
 # path = rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\KY_data\{month}\b1"
-state = "md"
-path = rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\dot_data"
+state = "mset3_data"
+path = rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\{state}"
 import os
 from tqdm import tqdm
 
@@ -35,28 +35,28 @@ from pathlib import Path
 ocr_path = rf"{path}\merged_files"  # combined ocr path
 Path(ocr_path).mkdir(exist_ok=True)
 test_dict = {"data": []}
-tests = [
-    test_dict["data"].append(
-        open(
-            path + "\\" + i.replace("_output.json", "_OCR.txt"), encoding="utf-8"
-        ).read()
-    )
-    for i in tqdm(lis)
-]
-file_name = rf"\dot_ocr.json"
+try:
+    tests = [
+        test_dict["data"].append(
+            open(
+                path + "\\" + i.replace("_output.json", "_OCR.txt"), encoding="utf-8"
+            ).read()
+        )
+        for i in tqdm(lis)
+    ]
+except Exception as e:
+    print(e)
+file_name = rf"\{state}_ocr.json"
 # # json.dump(test_dict,open(rf"\\filer-argentina-dev\Argentina\Shared Folder\Suraj\PA\Data_Extraction_{month}_Output\\"+file_name,"w"))
 json.dump(test_dict, open(ocr_path + file_name, "w"))
 
 # import sys
 # sys.exit(1)
 
-# ids=['25','18','65','94','7','10','13','23','61','62']
 lis2 = []
 lis2 = [i.replace("_OCR.txt", "_output.json") for i in lis]
-# ids=['5', '92', '93', '504', '6']
-# ids=['5', '92', '93', '6']
-ids = ["33", "35", "37", "38", "7", "15", "16", "20", "27", "65", "28"]
-# ids=['10','11']
+
+ids = "28,69,84,100,193".split(",")
 final = {"data": []}
 
 for j in tqdm(lis2):
@@ -75,7 +75,7 @@ for j in tqdm(lis2):
     training_dict["annotations"] = training_annotations
     final["data"].append(training_annotations)
 
-file_name = rf"\dot_output.json"
+file_name = rf"\{state}_output.json"
 json.dump(final, open(ocr_path + file_name, "w"))
 print("Completed Merger")
 print(path)
