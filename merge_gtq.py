@@ -4,7 +4,7 @@
 # path = rf"\\filer-argentina-dev\Argentina\Shared Folder\Prateekesh\KY\Data_Extraction_{month}"
 # month = "dec"
 # path = rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\KY_data\{month}\b1"
-state = "mset3_data"
+state = "mgt_set4"
 path = rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\{state}"
 import os
 from tqdm import tqdm
@@ -56,7 +56,7 @@ json.dump(test_dict, open(ocr_path + file_name, "w"))
 lis2 = []
 lis2 = [i.replace("_OCR.txt", "_output.json") for i in lis]
 
-ids = "28,69,84,100,193".split(",")
+ids = "34,44,99,".split(",")
 final = {"data": []}
 
 for j in tqdm(lis2):

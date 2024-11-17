@@ -9,13 +9,26 @@ import json
 
 # key_path = r"\\filer-argentina-dev\Argentina\Shared Folder\Suraj\Bucket\prd.json"
 
-key_path = "//filer-argentina-dev/Argentina/Shared Folder/Manikanda Gokul/ext report manual/prd.json"
-import os, json
+# key_path = "//filer-argentina-dev/Argentina/Shared Folder/Manikanda Gokul/ext report manual/prd.json"
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = key_path
+# bucketName = "clgx-clvtowerb-app-cv-gcs01-prd"
+# bucketName = "clgx-clvtowerb-app-cv-gcs01-prd"
 
+
+# key_path = "//filer-argentina-dev/Argentina/Shared Folder/Suraj/Bucket/prd1.json"
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = key_path
+# bucketName = "clgx-clvtowerb-app-cv-gcs01-prd"
+# bucketName = "clgx-clvtowerb-app-cv-gcs01-prd"
+
+key_path = r"//filer-argentina-dev/Argentina/Shared Folder/Suraj/Bucket/uat1.json"
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = key_path
-bucketName = "clgx-clvtowerb-app-cv-gcs01-prd"
-bucketName = "clgx-clvtowerb-app-cv-gcs01-prd"
-# "clgx-clvtowerb-app-cv-gcs01-prd"
+bucketName = "clgx-xt-uat-cv-gcs01-9247"
+bucketName = "clgx-xt-uat-cv-gcs01-9247"
+
+# key_path = r"//filer-argentina-dev/Argentina/Shared Folder/Suraj/Bucket/dev1.json"
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = key_path
+# bucketName = "clgx-clvision-dev-buck1_test"
+# bucketName = "clgx-clvision-dev-buck1_test"
 
 storage_client = storage.Client()
 bucket = storage_client.get_bucket(bucketName)
@@ -41,11 +54,19 @@ def download_ocr(tasks_to_do, tasks_completed, ocr_path):
                 for file in files:
                     blob = bucket.blob(file.name)
                     if "OCR" in file.name:
-                        blob.download_to_filename(ocr_path + "/" + i + "_OCR.txt")
+                        # blob.download_to_filename(ocr_path + "/" + i + "_OCR.txt")
                         # print("ocr", i)
-                    # elif "output_data" in file.name:
-                    #     blob.download_to_filename(ocr_path + "/" + i + "_output.json")
-                    # print("output_data", i)
+                        pass
+                    elif "output_data" in file.name:
+                        # blob.download_to_filename(ocr_path + "/" + i + "_output.json")
+                        # print("output_data", i)
+                        pass
+                    elif "maker" in file.name:
+                        blob.download_to_filename(
+                            ocr_path + "/" + i + "_maker_spacy.json"
+                        )
+                        print("spacy", i)
+                        # pass
                     del blob
                 tasks_completed.put(i)
             except Exception as e:
@@ -53,12 +74,16 @@ def download_ocr(tasks_to_do, tasks_completed, ocr_path):
 
 
 if __name__ == "__main__":
-    key_path = "//filer-argentina-dev/Argentina/Shared Folder/Manikanda Gokul/ext report manual/prd.json"
-    import os, json
+    # key_path = "//filer-argentina-dev/Argentina/Shared Folder/Manikanda Gokul/ext report manual/prd.json"
+    # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = key_path
+    # bucketName = "clgx-clvtowerb-app-cv-gcs01-prd"
+    # bucketName = "clgx-clvtowerb-app-cv-gcs01-prd"
 
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = key_path
-    bucketName = "clgx-clvtowerb-app-cv-gcs01-prd"
-    bucketName = "clgx-clvtowerb-app-cv-gcs01-prd"
+    # key_path = r"//filer-argentina-dev/Argentina/Shared Folder/Suraj/Bucket/dev1.json"
+    # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = key_path
+    # bucketName = "clgx-clvision-dev-buck1_test"
+    # bucketName = "clgx-clvision-dev-buck1_test"
+
     from google.cloud import storage
 
     storage_client = storage.Client()
@@ -87,7 +112,7 @@ if __name__ == "__main__":
 
     folder = "dec"
     # os.mkdir(r"\\10.212.30.30\Share Folder\yokesh\spacy\TX_TEST_OCR")
-    ocr_path = rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\ca_river_data"  # destination path for ocr
+    ocr_path = rf"C:\Users\surakumar\OneDrive - CoreLogic Solutions, LLC\Downloads\set4\uat"  # destination path for ocr
     print(f"\n\nOcr folder path: {ocr_path} \n\n")
     # ocr_path=r"C:\Users\mabdullah\OneDrive - CoreLogic Solutions, LLC\Downloads\TN\Data_Extraction_June" #destination path for ocr
     from pathlib import Path
@@ -101,7 +126,7 @@ if __name__ == "__main__":
     )  # path here#
     # batch_df=pd.read_csv(r"C:\Users\mabdullah\OneDrive - CoreLogic Solutions, LLC\Downloads\TN\TN_set1.1_4590new.csv") #path here#
 
-    batch = set(batch_df["river"].dropna().to_list())
+    batch = set(batch_df["set4uat"].dropna().to_list())
     print(len(batch))
     from tqdm import tqdm
 

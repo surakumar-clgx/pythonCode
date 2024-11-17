@@ -16,6 +16,7 @@ async def delete_files(folder):
 
 
 async def delete_folder(folder):
+    print(folder)
     await delete_files(folder)
     shutil.rmtree(folder)
 
